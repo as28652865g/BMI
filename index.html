@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- wrap  -->
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="header">
+                <!-- logo -->
+                <div class="logo"></div>
+                <!-- input  -->
+                <div class="input">
+                    <div>
+                        <label for="height">身高 cm</label>
+                        <input type="text" name="height" id="height" placeholder="請輸入身高" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="weight">體重 kg</label>
+                        <input type="text" name="weight" id="weight" placeholder="請輸入體重" autocomplete="off">
+                    </div>
+                </div>
+                <!-- btn  -->
+                <div class="result">
+                    <div class="submit">
+                        <input class="submit-btn" type="button" value="看結果">
+                    </div>
+                    <div class="status hidebtn ">
+                        <div class="result-nb">18.97</div>
+                        <span>BMI</span>
+                        <div class="refresh"></div>
+                        <div class="staus-text">中度</div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <!-- main  -->
+        <section class="history">
+            <div class="h1">
+                <h1>BMI紀錄</h1>
+            </div>
+            <div class="alert"></div>
+            <a  class="clear" href="#">清除歷史紀錄</a>
+            <ul class="list">
+                
+            </ul>
+            
+        </section>
+        <!-- footer  -->
+        <footer>
+            <div class="footerImg"></div>
+        </footer>
+    </div>
+    <script src="./all.js"></script>
+</body>
+</html>

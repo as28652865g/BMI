@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* wrap  */
+.wrap {
+    width: 1024px;
+    margin: auto;
+}
+/* header  */
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #424242;
+}
+.logo{
+    background-image: url(./img/BMICLogo.png);
+    width: 117px;
+    height: 117px;
+    margin-right: 97px;
+}
+.input{
+    width: 250px;
+    height: auto;
+    margin-right: 53px;
+}
+.input > div{
+    height: auto;
+}
+.input label{
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: #FFD366;
+}
+
+.input input{
+    position: relative;
+    padding: 1px;
+    height: 40px;
+    background-color: rgba(255,255,255,.18);
+    border: 2px solid #FFD366;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.input input::placeholder{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 24px;
+    color: rgba(255,255,255,.5);
+}
+.input > div:nth-child(1){
+    margin-bottom: 23px;
+}
+.result{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.submit input{
+    background-color: #FFD366;
+	width: 120px;
+	height: 120px;
+	color: #424242;
+	line-height: 120px;
+	font-size: 24px;
+	text-align: center;
+	border:none;
+	border-radius: 60px;
+	margin: 15px;
+}
+.submit input:hover{
+    background-color: #fce2a1;
+}
+.submit input:active{
+    background-color: #fcc02a;
+}
+/* main  */
+section{
+    min-height: 500px;
+    height: auto;
+    background-color: #f5f5f5;
+}
+h1{
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 36px;
+}
+.clear{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.clear:hover{
+    color: greenyellow;
+}
+
+.status{
+	width: 108px;
+	height: 108px;
+	border-radius: 66px;
+	margin: 15px;
+	border:6px solid #86D73F;
+	text-align: center;
+	font-family: 'SFNSDisplay';
+	position: relative;
+}
+.result-nb{
+	font-size: 32px;
+	margin: 27px 0 7px 0;
+}
+.result-nb span{
+    font-size: 20px;
+}
+.refresh{
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-image: url(./img/icons_loop.png);
+	background-position: center;
+	border-radius: 15px;
+	right: 12px;
+	width: 30px;
+	height: 30px;
+}
+.refresh:hover{
+	box-shadow:inset 0 0 10px #ffffff;
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.staus-text{
+	font-size: 32px;
+	width: 150px;
+	position: absolute;
+	right: -170px;
+	text-align: left;
+	top: 35px;
+}
+.hidebtn {
+    display: none;
+}
+/* footer  */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #FFD366;
+    height: auto;
+    padding-top: 18px;
+    padding-bottom: 17px;
+}
+.footerImg{
+    background-image: url(./img/BMICLogo.png);
+    background-size: cover;
+    filter: brightness(0) saturate(100%) invert(27%) sepia(2%) saturate(0%) hue-rotate(
+        155deg
+        ) brightness(90%) contrast(94%);
+    width: 55px;
+    height: 55px;
+}
+
+/*--status green---*/
+.result-green .status{
+	border-color: #86D73F;
+}
+.result-green .result-nb ,.result-green span ,.result-green .staus-text{
+	color: #86D73F;
+}
+.result-green .refresh{
+	background-color: #86D73F;
+}
+.record-row-green{
+	border-left: 7px solid #86D73F;
+}
+
+/*--status blue---*/
+.result-blue .status{
+	border-color: #31BAF9;
+}
+.result-blue .result-nb ,.result-blue span ,.result-blue .staus-text{
+	color: #31BAF9;
+}
+.result-blue .refresh{
+	background-color: #31BAF9;
+}
+.record-row-blue{
+	border-left: 7px solid #31BAF9;
+}
+/*--status orange---*/
+.result-orange .status{
+	border-color: #FF982D;
+}
+.result-orange .result-nb, .result-orange span, .result-orange .staus-text{
+	color: #FF982D;
+}
+.result-orange .refresh{
+	background-color: #FF982D;
+}
+.record-row-orange{
+	border-left: 7px solid #FF982D;
+}
+/*--status deep orange---*/
+.result-oranged .status{
+	border-color: #FF6C03;
+}
+.result-oranged .result-nb, .result-oranged span, .result-oranged .staus-text{
+	color: #FF6C03;
+}
+.result-oranged .refresh{
+	background-color: #FF6C03;
+}
+.record-row-oranged{
+	border-left: 7px solid #FF6C03;
+}
+/*--status ref---*/
+.result-red .status{
+	border-color: #FF1200;
+}
+.result-red .result-nb, .result-red span, .result-red .staus-text{
+	color: #FF1200;
+}
+.result-red .refresh{
+	background-color: #FF1200;
+}
+.record-row-red{
+	border-left: 7px solid #FF1200;
+}
+/*-----record------*/
+.record-wrapper{
+	background-color: #efefef;
+}
+.record-row{
+	font-size: 20px;
+	font-family:'SFNSDisplay';
+	background-color: #fff;
+	padding: 20px 0;
+	color:#424242;
+	margin: 8px;
+}
+
+.record-row > div{
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	color:#424242;
+}
+h2{
+	width: 100%;
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+.s-title{
+	font-size: 16px;
+	padding-right: 10px;
+}
+.record-row .record-date{
+	text-align: right;
+}
+.history{
+    padding-bottom: 8px;
+}
+.alert{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    font-weight: 900;
+}
+.list{
+    margin: 0 auto;
+    width: 95%;
+}
